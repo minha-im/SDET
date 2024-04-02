@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "8986919b-ff65-44d8-929a-d6e8932ac853",
+		"name": "Minha-SDET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8827409"
+	},
+	"item": [
+		{
+			"name": "Get Country Data -Pos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Verify HTTP status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body contains 'India'\", function () {\r",
+							"    var responseBody = pm.response.text();\r",
+							"\r",
+							"    pm.expect(responseBody).to.include(\"India\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/India",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"India"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country Data -Neg",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Negative Test Case 1: Invalid Country Name\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"// Assert status code is 404 Not Found\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body contains 'Not Found'\", function () {\r",
+							"    var responseBody = pm.response.text();\r",
+							"\r",
+							"    pm.expect(responseBody).to.include(\"Not Found\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/India1",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"India1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
