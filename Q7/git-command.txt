@@ -1,0 +1,153 @@
+PS C:\Users\Admin\OneDrive\Desktop\GIT> git clone https://github.com/minha-im/SDET.git
+Cloning into 'SDET'...
+warning: You appear to have cloned an empty repository.        
+PS C:\Users\Admin\OneDrive\Desktop\GIT> cd SDET
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git branch -a     
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git add test.txt
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git commit -m "Created Test.txt"
+[main (root-commit) 1d74b55] Created Test.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 107.00 KiB/s, done.   
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)  
+To https://github.com/minha-im/SDET.git
+ * [new branch]      main -> main
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git add test.txt
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git commit -m "Modified test file"
+[main 8852cfe] Modified test file
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 281 bytes | 93.00 KiB/s, done.    
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)  
+To https://github.com/minha-im/SDET.git
+   1d74b55..8852cfe  main -> main
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git brach -a
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git branch -a
+* main
+  remotes/origin/main
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git branch -a
+* main
+  remotes/origin/main
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git pull
+From https://github.com/minha-im/SDET
+ * [new branch]      comprehensive_basic_2 -> origin/comprehensive_basic_2
+Already up to date.
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git branch -a
+* main
+  remotes/origin/comprehensive_basic_2
+error: pathspec 'SDET' did not match any file(s) known to git
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git checkout comprerror: pathspec 'SDET' did not match any file(s) known to git  
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git checkout comprehensive_basic_2
+branch 'comprehensive_basic_2' set up to track 'origin/comprehensive_basic_2'.
+Switched to a new branch 'comprehensive_basic_2'
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git branch -a     
+* comprehensive_basic_2
+  main
+  remotes/origin/comprehensive_basic_2
+  remotes/origin/main
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git add .
+warning: in the working copy of 'Q8/Minha-SDET.postman_collection.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Q9/JMeter.jmx', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git status    
+On branch comprehensive_basic_2
+Your branch is up to date with 'origin/comprehensive_basic_2'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Q1/ReadAndWriteData-Java-Output.png
+        new file:   Q1/ReadAndWriteData.java
+        new file:   Q10/test_fixtures_2-Output.png
+        new file:   Q10/test_fixtures_2.py
+        new file:   Q2/ReadAndWriteData-Python-Output.png      
+        new file:   Q2/ReadAndWriteData.py
+        new file:   Q3/Selenium.java
+        new file:   Q3/Selenium1-Output.png
+        new file:   Q4/Selenium2-Output.png
+        new file:   Q4/Selenium2.java
+        new file:   Q5/TestNG-Output.png
+        new file:   Q5/TestNG-Output2.png
+        new file:   Q5/TestNG.java
+        new file:   Q7/git-Output1.png
+        new file:   Q7/git-Output2.png
+        new file:   Q8/Minha-SDET.postman_collection.json      
+        new file:   Q8/Postman-Output.png
+        new file:   Q8/Postman_Neg-Output.png
+        new file:   Q8/Postman_Neg1-Output.png
+        new file:   Q8/Postman_Neg2-Output.png
+        new file:   Q8/Postman_Pos1-Output.png
+        new file:   Q8/Postman_Pos2-Output.png
+        new file:   Q9/JMeter.jmx
+        new file:   Q9/JMeter1-output.png
+        new file:   Q9/JMeter2-output.png
+        new file:   Q9/JMeter3-output.png
+
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git commit -m "Created Questions folders in newbrach" 
+[comprehensive_basic_2 a3d1c36] Created Questions folders in newbrach
+ 26 files changed, 561 insertions(+)
+ create mode 100644 Q1/ReadAndWriteData-Java-Output.png        
+ create mode 100644 Q1/ReadAndWriteData.java
+ create mode 100644 Q10/test_fixtures_2-Output.png
+ create mode 100644 Q10/test_fixtures_2.py
+ create mode 100644 Q2/ReadAndWriteData-Python-Output.png      
+ create mode 100644 Q2/ReadAndWriteData.py
+ create mode 100644 Q3/Selenium.java
+ create mode 100644 Q4/Selenium2.java
+ create mode 100644 Q5/TestNG-Output.png
+ create mode 100644 Q5/TestNG-Output2.png
+ create mode 100644 Q5/TestNG.java
+ create mode 100644 Q7/git-Output1.png
+ create mode 100644 Q7/git-Output2.png
+ create mode 100644 Q8/Minha-SDET.postman_collection.json
+ create mode 100644 Q8/Postman-Output.png
+ create mode 100644 Q8/Postman_Neg-Output.png
+ create mode 100644 Q8/Postman_Neg1-Output.png
+ create mode 100644 Q8/Postman_Neg2-Output.png
+ create mode 100644 Q8/Postman_Pos1-Output.png
+ create mode 100644 Q8/Postman_Pos2-Output.png
+ create mode 100644 Q9/JMeter.jmx
+ create mode 100644 Q9/JMeter1-output.png
+ create mode 100644 Q9/JMeter2-output.png
+ create mode 100644 Q9/JMeter3-output.png
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git push origin comprehensive_basic_2
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (37/37), 1.36 MiB | 383.00 KiB/s, done.
+Total 37 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/minha-im/SDET.git
+   8852cfe..a3d1c36  comprehensive_basic_2 -> comprehensive_basic_2
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git add .     
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git commit -m "Added last Screenshort of git command"
+[comprehensive_basic_2 763376c] Added last Screenshort of git command
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Q7/git-Output3.png
+ create mode 100644 Q7/git-Output4.png
+ create mode 100644 Q7/git-Output5.png
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> git push origin comprehensive_basic_2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 193.44 KiB | 8.79 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/minha-im/SDET.git
+   a3d1c36..763376c  comprehensive_basic_2 -> comprehensive_basic_2
+PS C:\Users\Admin\OneDrive\Desktop\GIT\SDET> 
