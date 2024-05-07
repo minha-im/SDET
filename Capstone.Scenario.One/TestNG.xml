@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Capstone Project Suite" verbose="1">
+    <test name="Capstone Project Test">
+        <classes>
+            <class name="stepDefinition.stepDefinitions"/>
+        </classes>
+    </test>
+</suite>
